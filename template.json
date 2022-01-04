@@ -1,0 +1,20 @@
+{
+    "comment": {
+        "type": "xpath",
+        "xpath": "count(//div[@class='comment-item '])",
+        "children": {
+            "commenter": {
+                "type": "xpath",
+                "xpath": "//div[contains(@class, 'comment')]/h3/span[@class='comment-info']/a//text()"
+            },
+            "commentTime": {
+                "type": "xpath",
+                "xpath": "//span[@class='comment-info']/span[@class='comment-time ']//text()"
+            },
+            "commentContent": {
+                "type": "xpath",
+                "xpath": "//div[@class='comment']//p[@class=' comment-content']/span//text()"
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="">
+
+<head>
+    <title>测试xpath</title>
+</head>
+
+<body>
+    <a href='' class='link red'>test1</a>
+    <div class="out">
+        <a href='https://www.baidu.com/' class='link yello'>test2</a>
+        <a href='' class='link blank'>test3</a>
+        <div class='inner'>
+            <a href='' class='link yellow'>test4</a>
+            <a href='' class='link pulp'>test5</a>
+            <a href='' class='link green'>test6</a>
+        </div>
+        <a href='' class='link blue'>test7</a>
+        <a href='' class='link pink'>test8</a>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .out {}
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .white {
+        color: #fff;
+    }
+
+    .yellow {
+        color: yellow;
+    }
+
+    .yello {
+        color: yellowgreen;
+    }
+
+    .blank {
+        color: #000;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .pulp {
+        color: purple;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .pink {
+        color: pink;
+    }
+
+    .link {
+        display: block;
+        line-height: 100px;
+    }
+</style>

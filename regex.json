@@ -1,0 +1,21 @@
+{
+    "comment": {
+        "type": "regex",
+        "parentre": "<div class=\"mod-bd\" id=\"comments\">[\\s\\S]{1,100000}</div>",
+        "regex": "<div class=\"comment-item \"[\\s\\S]{1,10000}?</div>",
+        "children": {
+            "commenter": {
+                "type": "regex",
+                "regex": "<span class=\"comment-info\">\n.*<a[\\s\\S]{1,1000}?>(?<v>[\\s\\S]{1,100}?)</a>"
+            },
+            "commentTime": {
+                "type": "regex",
+                "regex": "<span class=\"comment-time \"[\\s\\S]{1,100}?>\n.(?<v>[\\s\\S]{1,100}?)\n.*</span>"
+            },
+            "commentContent": {
+                "type": "regex",
+                "regex": "<p class=\" comment-content\"[\\s\\S]{1,1000}?<span class=\"short\">(?<v>[\\s\\S]{1,10000}?)</span>"
+            }
+        }
+    }
+}
